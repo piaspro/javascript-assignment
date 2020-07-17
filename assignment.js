@@ -8,7 +8,7 @@ function feetToMile(feet) {
         return feet + " feet = " + mile + " " + "Mile";
 }
 
-var result = feetToMile(100);
+var result = feetToMile(50000);
 console.log(result);
 
 // Wood calculator in qubic feet
@@ -43,17 +43,17 @@ function brickCalculator(buildingStorey) {
         return "You are not constructing any building";
     } else if (buildingStorey <= 10) {
         firstTenStorey = buildingStorey * 15 * 1000;
-        return "Total Bricks = " + firstTenStorey;
+        return "Total Bricks for " + buildingStorey + " Storey Building = " + firstTenStorey;
     } else if (buildingStorey >= 11 && buildingStorey <= 20) {
         moreThantenStorey = ((buildingStorey - 10) * (12 * 1000)) + (10 * 15 * 1000);
-        return "Total Bricks = " + moreThantenStorey;
+        return "Total Bricks for " + buildingStorey + " Storey Building = " + moreThantenStorey;
     } else if (buildingStorey >= 21) {
         moreThantweentyStorey = ((buildingStorey - 20) * (10 * 1000)) + (10 * 12 * 1000) + (10 * 15 * 1000);
-        return "Total Bricks = " + moreThantweentyStorey;
+        return "Total Bricks for " + buildingStorey + " Storey Building = " + moreThantweentyStorey;
     }
 }
 
-var bricksAmount = brickCalculator(11);
+var bricksAmount = brickCalculator(20);
 console.log(bricksAmount)
 
 // Tiny friend
