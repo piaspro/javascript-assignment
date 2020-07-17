@@ -15,7 +15,7 @@ console.log(result);
 
 function woodCalculator(chair, table, bed) {
     const totalMeasurement = (chair * 1) + (table * 3) + (bed * 5);
-    if (chair <= 0, table <= 0, bed <= 0) {
+    if (chair <= 0 && table <= 0 && bed <= 0) {
         return "Sorry - You are having a bad day"
     } else
         return totalMeasurement;
