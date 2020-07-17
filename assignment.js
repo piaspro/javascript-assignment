@@ -5,7 +5,7 @@ function feetToMile(feet) {
     if (feet <= 0) {
         return "Invalid Number - Can't convert to mile"
     } else
-        return feet + " feet = " + mile +" "+ "Mile";
+        return feet + " feet = " + mile + " " + "Mile";
 }
 
 var result = feetToMile(100);
@@ -17,19 +17,19 @@ function woodCalculator(chair, table, bed) {
     const totalMeasurement = (chair * 1) + (table * 3) + (bed * 5);
     if (chair <= 0 && table <= 0 && bed <= 0) {
         return "Sorry - You are having a bad day"
-    } else if (chair >= 1 && table <= 0 && bed <= 0){
+    } else if (chair >= 1 && table <= 0 && bed <= 0) {
         return "Your wood measurement for Chair " + (chair * 1);
-    }else if (chair <= 0 && table >= 1 && bed <= 0){
+    } else if (chair <= 0 && table >= 1 && bed <= 0) {
         return "Your wood measurement for Table " + (table * 3);
-    }else if (chair <= 0 && table <= 0 && bed >= 1){
+    } else if (chair <= 0 && table <= 0 && bed >= 1) {
         return "Your wood measurement for Bed " + (bed * 5);
-    }else if (chair <= 0 && table >= 1 && bed >= 1){
-        return "Your wood measurement for Table & Bed " + (table * 3) +  (bed * 5);
-    }else if (chair >= 1 && table >= 1 && bed <= 0){
+    } else if (chair <= 0 && table >= 1 && bed >= 1) {
+        return "Your wood measurement for Table & Bed " + (table * 3) + (bed * 5);
+    } else if (chair >= 1 && table >= 1 && bed <= 0) {
         return "Your wood measurement for Chair & Table " + (chair * 1) + (table * 3);
-    }else if (chair >= 1 && table <= 0 && bed >= 1){
+    } else if (chair >= 1 && table <= 0 && bed >= 1) {
         return "Your wood measurement for Chair & Bed " + (chair * 1) + (bed * 5);
-    }else
+    } else
         return "Your total wood measurement " + totalMeasurement;
 }
 
